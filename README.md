@@ -4,14 +4,96 @@ A production-quality full-stack **Task Management Application** built with **Spr
 
 ---
 
+
+## 🚀 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Prabhatmi2911/taskflow-task-manager.git
+cd taskflow-task-manager
+```
+
+---
+
+### 2. Backend Setup (Spring Boot)
+
+Go to backend folder:
+
+```bash
+cd backend
+```
+
+Open the file:
+
+```text
+src/main/resources/application.properties
+```
+
+Update your MySQL username and password:
+
+```properties
+spring.datasource.username=root
+spring.datasource.password=YOUR_MYSQL_PASSWORD
+```
+
+Also make sure MySQL server is running and database exists.
+
+Run backend:
+
+```bash
+mvn spring-boot:run
+```
+
+Backend runs on:
+
+```text
+http://localhost:8080
+```
+
+---
+
+### 3. Frontend Setup (React)
+
+Open new terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+
+
+🪸🪸 To run Both frontend and Backend Server concurrently , go to taskmanger folder and follow the following steps: 
+  step 1: ls
+  output: backend
+          frontend
+          README.md......
+
+  step 2: npm run dev 
+  output: both frontend and backend running concurrently
+
+
+
+
+
 ## 📸 Screenshots
 
-> Add screenshots here after running the project:
+> Screenshots of the project:
 > - `/screenshots/login.png`
+![Login](image-1.png)
+![Register](image-2.png)
 > - `/screenshots/dashboard.png`
 ![Dashboard](image.png)
 > - `/screenshots/task-edit.png`
-
+![Edit task](image-3.png)
 ---
 
 ## 🧱 Tech Stack
@@ -251,6 +333,8 @@ All task endpoints require: `Authorization: Bearer <token>`
 
 ## 🧪 How to Test the Project
 
+
+
 ### Using curl
 
 ```bash
@@ -316,14 +400,3 @@ Request → JwtAuthenticationFilter
 
 ---
 
-## 🚀 Optional Improvements for Production
-
-- [ ] Add pagination to GET /api/tasks (Spring Data Pageable)
-- [ ] Add task due dates and priority levels
-- [ ] Add user registration endpoint
-- [ ] Add refresh token mechanism
-- [ ] Write unit tests (JUnit 5 + Mockito for services, React Testing Library for components)
-- [ ] Add Docker + docker-compose for one-command startup
-- [ ] Deploy backend to Railway/Render, frontend to Vercel/Netlify
-- [ ] Add task categories / labels
-- [ ] Add email notifications for due tasks

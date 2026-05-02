@@ -336,8 +336,8 @@ All task endpoints require: `Authorization: Bearer <token>`
     "title": "Write unit tests",
     "description": "Cover all service layer methods",
     "status": "PENDING",
-    "createdAt": "2024-03-10T10:30:00",
-    "updatedAt": "2024-03-10T10:30:00"
+    "createdAt": "2026-05-02T10:30:00",
+    "updatedAt": "2026-05-02T10:30:00"
   }
 }
 ```

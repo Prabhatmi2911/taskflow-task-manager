@@ -72,13 +72,26 @@ http://localhost:5173
 
 
 🪸🪸 To run Both frontend and Backend Server concurrently , go to taskmanger folder and follow the following steps: 
-  step 1: ls
-  output: backend
-          frontend
-          README.md......
+  step 1: 
 
-  step 2: npm run dev 
-  output: both frontend and backend running concurrently
+```bash
+ls
+```
+
+output: backend
+        frontend
+        README.md......
+
+
+
+step 2: 
+
+```bash
+
+npm run dev
+```
+
+output: both frontend and backend running concurrently
 
 
 

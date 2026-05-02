@@ -1,0 +1,17 @@
+{
+  "name": "taskflow-task-manager",
+  "version": "1.0.0",
+  "description": "Full Stack Task Manager — Spring Boot + React",
+  "private": true,
+  "scripts": {
+    "install:frontend": "cd frontend && npm install",
+    "setup": "npm run install:frontend",
+    "backend": "cd backend && mvn spring-boot:run",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently --kill-others-on-fail --prefix-colors \"bgBlue.bold,bgMagenta.bold\" --prefix \"[{name}]\" --names \"BACKEND,FRONTEND\" \"npm run backend\" \"npm run frontend\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
